@@ -1,0 +1,8 @@
+# Build files
+
+.env
+/node_modules
+
+# Output files
+
+*.lp

@@ -1,0 +1,62 @@
+arakni;Arakni, Huntsman;false;false
+azalea;Azalea, Ace in the Hole;false;false
+boltyn;Ser Boltyn, Breaker of Dawn;false;false
+bravo;Bravo, Showstopper;false;false
+bravob;Bravo, Star of the Show;false;true
+briar;Briar, Warden of Thorns;false;false
+chane;Chane, Bound by Shadow;false;true
+dash;Dash, Inventor Extraordinaire;false;false
+dorinthea;Dorinthea Ironsong;false;false
+dromai;Dromai, Ash Artist;false;false
+fai;Fai, Rising Rebellion;false;false
+iyslander;Iyslander, Stormbind;false;false
+kano;Kano, Dracai of Aether;false;false
+katsu;Katsu, the Wanderer;false;false
+levia;Levia, Shadowborn Abomination;false;false
+lexi;Lexi, Livewire;false;false
+oldhim;Oldhim, Grandfather of Eternity;false;true
+prism;Prism, Sculptor of Arc Light;false;true
+prismb;Prism, Awakener of Sol;false;false
+rhinar;Rhinar, Reckless Rampage;false;false
+riptide;Riptide, Lurker of the Deep;false;false
+teklovossen;Teklovossen, Esteemed Magnate;false;false
+uzuri;Uzuri, Switchblade;false;false
+viserai;Viserai, Rune Blood;false;false
+vynnset;Vynnset, Iron Maiden;false;false
+arakniy;Arakni;true;false;
+arakniby;Arakni, Solitary Confinement;true;false
+azaleay;Azalea;true;false;
+benjiy;Benji, the Piercing Wind;true;false
+boltyny;Boltyn;true;false
+bravoy;Bravo;true;false
+briary;Briar;true;false
+chaney;Chane;true;false
+dashy;Dash;true;false
+datadolly;Data Doll MKII;true;false
+dorintheay;Dorinthea;true;false
+dorintheaby;Dorinthea, Quicksilver Prodigy;true;false
+dromaiy;Dromai;true;false
+emperory;Emperor, Dracai of Aesir;true;false
+faiy;Fai;true;false
+genisy;Genis Wotchuneed;true;false
+iray;Ira, Crimson Haze;true;false
+iyslandery;Iyslander;true;true
+kanoy;Kano;true;false
+kassaiy;Kassai, Cintari Sellsword;true;false
+katsuy;Katsu;true;false
+kavdaeny;Kavdaen, Trader of Skins;true;false
+kayoy;Kayo, Berserker Runt;true;false
+leviay;Levia;true;false
+lexiy;Lexi;true;false
+oldhimy;Oldhim;true;true
+prismy;Prism;true;false
+prismby;Prism, Advent of Thrones;true;false
+rhinary;Rhinar;true;false
+riptidey;Riptide;true;false
+shiyanay;Shiyana, Diamond Gemini;true;false
+teklovosseny;Teklovossen;true;false
+uzuriy;Uzuri;true;false
+valday;Valda Brightaxe;true;false
+viseraiy;Viserai;true;true
+vynnsety;Vynnset;true;false
+yojiy;Yoji, Royal Protector;true;false
