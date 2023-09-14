@@ -8,7 +8,7 @@ Setup backend:
 npm install
 ```
 
-Setup and run database (note, will install psql and setup a new user called "smhelper" in the OS):
+Setup and run database (note, will install psql, clingo and setup a new user called "smhelper" in the OS):
 ```
 sudo ./db-setup.sh
 ```

@@ -7,6 +7,10 @@ sudo apt update
 sudo apt install postgresql
 echo "Complete!"
 echo
+echo "Downloading gringo using apt..."
+sudo apt install gringo
+echo "Complete!"
+echo
 echo "Restart postgresql..."
 sudo systemctl stop postgresql
 sudo systemctl start postgresql
@@ -42,10 +46,17 @@ sudo -u $DB_USERNAME psql -c "CREATE TABLE selections ( \
     nick varchar (50) REFERENCES contestants, \
     hero varchar (50) REFERENCES heroes, \
     priority int NOT NULL CHECK (0 < priority AND priority < 6), \
-    selected boolean, \
     PRIMARY KEY (nick, hero) \
     )"
-    
+
+sudo -u $DB_USERNAME psql -c "CREATE TABLE assignments ( \
+    groupnum int NOT NULL, \
+    nick varchar (50) REFERENCES contestants, \
+    hero varchar (50) REFERENCES heroes, \
+    priority int NOT NULL CHECK (0 < priority AND priority < 6), \
+    PRIMARY KEY (groupnum, nick, hero) \
+    )"
+
 echo "Complete!"
 echo
 echo "Populating the heroes table using heroes.txt..."
