@@ -28,7 +28,7 @@ app.get("/sm/heroes", async (req, res) => {
     const query = "SELECT * FROM heroes;";
     const dbres = await pool.query(query);
 
-    return res.status(400).json(dbres.rows);
+    return res.json(dbres.rows);
   } catch (error) {
     return res.status(500).end();
   }
@@ -39,7 +39,7 @@ app.get("/sm/heroes/cc", async (req, res) => {
     const query = "SELECT hero, name FROM heroes WHERE NOT young AND NOT legend ORDER BY hero ASC;";
     const dbres = await pool.query(query);
 
-    return res.status(400).json(dbres.rows);
+    return res.json(dbres.rows);
   } catch (error) {
     return res.status(500).end();
   }
@@ -50,7 +50,7 @@ app.get("/sm/heroes/blitz", async (req, res) => {
     const query = "SELECT hero, name FROM heroes WHERE young AND NOT legend ORDER BY hero ASC;";
     const dbres = await pool.query(query);
 
-    return res.status(400).json(dbres.rows);
+    return res.json(dbres.rows);
   } catch (error) {
     return res.status(500).end();
   }
@@ -61,7 +61,7 @@ app.get("/sm/contestants", async (req, res) => {
     const query = "SELECT * FROM contestants ORDER BY nick ASC;";
     const dbres = await pool.query(query);
 
-    return res.status(400).json(dbres.rows);
+    return res.json(dbres.rows);
   } catch (error) {
     return res.status(500).end();
   }
@@ -72,7 +72,7 @@ app.get("/sm/selections", async (req, res) => {
     const query = "SELECT nick, hero, priority FROM selections ORDER BY nick ASC, priority DESC;";
     const dbres = await pool.query(query);
 
-    return res.status(400).json(dbres.rows);
+    return res.json(dbres.rows);
   } catch (error) {
     return res.status(500).end();
   }
