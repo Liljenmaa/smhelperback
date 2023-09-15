@@ -12,7 +12,7 @@ Setup `.env` using `.env.template`. Remember to use double quotes for strings.
 
 Setup and run database (note, will install psql, clingo and setup a new user called "smhelper" in the OS):
 ```
-sudo ./db-setup.sh
+sudo dbsetup.sh
 ```
 
 Run backend:
