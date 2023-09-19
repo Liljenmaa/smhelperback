@@ -30,6 +30,7 @@ app.get("/sm/heroes", async (req, res) => {
 
     return res.json(dbres.rows);
   } catch (error) {
+    console.log(error);
     return res.status(500).end();
   }
 })
@@ -41,6 +42,7 @@ app.get("/sm/heroes/cc", async (req, res) => {
 
     return res.json(dbres.rows);
   } catch (error) {
+    console.log(error);
     return res.status(500).end();
   }
 })
@@ -52,6 +54,7 @@ app.get("/sm/heroes/blitz", async (req, res) => {
 
     return res.json(dbres.rows);
   } catch (error) {
+    console.log(error);
     return res.status(500).end();
   }
 })
@@ -63,6 +66,7 @@ app.get("/sm/contestants", async (req, res) => {
 
     return res.json(dbres.rows);
   } catch (error) {
+    console.log(error);
     return res.status(500).end();
   }
 })
@@ -74,6 +78,7 @@ app.get("/sm/selections", async (req, res) => {
 
     return res.json(dbres.rows);
   } catch (error) {
+    console.log(error);
     return res.status(500).end();
   }
 })
@@ -133,6 +138,7 @@ app.post("/sm/selection", async (req, res) => {
 
     return res.json(queryres.rows);
   } catch (error) {
+    console.log(error);
     return res.status(500).end();
   }
 })
@@ -144,6 +150,7 @@ app.get("/sm/assignments", async (req, res) => {
 
     return res.json(dbres.rows);
   } catch (error) {
+    console.log(error);
     res.status(500).end();
   }
 })
@@ -155,6 +162,7 @@ app.delete("/sm/assignments", async (req, res) => {
 
     return res.end();
   } catch (error) {
+    console.log(error);
     res.status(500).end();
   }
 })
@@ -239,6 +247,7 @@ app.post("/sm/runsolver", async (req, res) => {
 
     return res.end();
   } catch (error) {
+    console.log(error);
     res.status(500).end();
   }
 })
