@@ -102,7 +102,7 @@ app.post("/sm/selection", async (req, res) => {
     // åäö -> aao, filter only the english alphabet, transform to lower case
     const sanitizedNick = body.nick.replace(/[åä]/g, "a").replace(/ö/g, "o").replace(/[^A-Za-z]/g, "").toLowerCase();
 
-    if (sanitizedNick === "") {
+    if (sanitizedNick === "" || sanitizedNick.length > 50) {
       return res.status(400).send({ error: "nick invalid" });
     }
 
