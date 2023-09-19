@@ -119,7 +119,7 @@ app.post("/sm/selection", async (req, res) => {
       }
     }
 
-    const contestantquery = `INSERT INTO contestants(nick) VALUES ('${sanitizedNick}');`;
+    const contestantquery = `BEGIN; INSERT INTO contestants(nick) VALUES ('${sanitizedNick}');`;
     const contestantres = await pool.query(contestantquery);
 
     let queryend = "";
@@ -135,9 +135,13 @@ app.post("/sm/selection", async (req, res) => {
 
     const query = `INSERT INTO selections(nick, hero, priority) VALUES ${queryend} RETURNING *;`;
     const queryres = await pool.query(query);
+    const commit = "COMMIT;";
+    await pool.query(commit);
 
     return res.json(queryres.rows);
   } catch (error) {
+    const rollback = "ROLLBACK;";
+    await pool.query(rollback);
     console.log(error);
     return res.status(500).end();
   }
@@ -245,7 +249,7 @@ app.post("/sm/runsolver", async (req, res) => {
       }
     });
 
-    return res.end();
+    return res.json({ msg: "run started" });
   } catch (error) {
     console.log(error);
     res.status(500).end();
