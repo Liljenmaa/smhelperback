@@ -106,14 +106,15 @@ app.post("/sm/selection", async (req, res) => {
       return res.status(400).send({ error: "nick invalid" });
     }
 
-    const nickcheck = `SELECT * FROM contestants WHERE nick = '${sanitizedNick}';`;
+    const nickcheck = "SELECT * FROM contestants;";
     const nickres = await pool.query(nickcheck);
+    const nicklist = nickres.rows.map((n) => n.nick);
 
-    if (nickres.rows.length) {
+    if (nicklist.includes(sanitizedNick)) {
       return res.status(400).send({ error: "nick already exists" });
     }
 
-    const selections = body.selections;
+    const selections = body.selections.map((sel) => sel.replace(/[^a-z]/g, ""));
 
     if (!selections || selections.length < 3 || selections.length > 5) {
       return res.status(400).send({ error: "invalid number of selections" });
@@ -123,12 +124,13 @@ app.post("/sm/selection", async (req, res) => {
       return res.status(400).send({ error: "selections are not unique" });
     }
 
-    for (const selection of selections) {
-      const herocheck = `SELECT * FROM heroes WHERE hero = '${selection}';`;
-      const herores = await pool.query(herocheck);
+    const heroes = "Select hero FROM heroes;";
+    const heroesres = await pool.query(heroes);
+    const herolist = heroesres.rows.map((h) => h.hero);
 
-      if (!herores.rows.length) {
-        return res.status(400).send({ error: `hero ${selection} not valid` });
+    for (const selection of selections) {
+      if (!herolist.includes(selection)) {
+        return res.status(400).send({ error: "one of the heroes not valid" });
       }
     }
 
