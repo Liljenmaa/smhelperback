@@ -29,9 +29,11 @@ azaleay;Azalea;true;false;
 benjiy;Benji, the Piercing Wind;true;false
 boltyny;Boltyn;true;false
 bravoy;Bravo;true;false
+brevanty;Brevant, Civil Protector;true;false
 briary;Briar;true;false
 chaney;Chane;true;false
 dashy;Dash;true;false
+dashby;Dash, Database;true;false
 datadolly;Data Doll MKII;true;false
 dorintheay;Dorinthea;true;false
 dorintheaby;Dorinthea, Quicksilver Prodigy;true;false
@@ -48,12 +50,16 @@ kavdaeny;Kavdaen, Trader of Skins;true;false
 kayoy;Kayo, Berserker Runt;true;false
 leviay;Levia;true;false
 lexiy;Lexi;true;false
+maxxy;Maxx Nitro;true;false
+melodyy;Melody, Sing-along;true;false
 oldhimy;Oldhim;true;true
 prismy;Prism;true;false
 prismby;Prism, Advent of Thrones;true;false
+professory;Professor Teklovossen;true;false
 rhinary;Rhinar;true;false
 riptidey;Riptide;true;false
 shiyanay;Shiyana, Diamond Gemini;true;false
+squizzyy;Squizzy & Floof;true;false
 teklovosseny;Teklovossen;true;false
 uzuriy;Uzuri;true;false
 valday;Valda Brightaxe;true;false
