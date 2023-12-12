@@ -31,7 +31,7 @@ boltyny;Boltyn;true;false
 bravoy;Bravo;true;false
 brevanty;Brevant, Civil Protector;true;false
 briary;Briar;true;false
-chaney;Chane;true;false
+chaney;Chane;true;true
 dashy;Dash;true;false
 dashby;Dash, Database;true;false
 datadolly;Data Doll MKII;true;false
@@ -41,10 +41,10 @@ dromaiy;Dromai;true;false
 emperory;Emperor, Dracai of Aesir;true;false
 faiy;Fai;true;false
 genisy;Genis Wotchuneed;true;false
-iray;Ira, Crimson Haze;true;false
+iray;Ira, Crimson Haze;true;true
 iyslandery;Iyslander;true;true
-kanoy;Kano;true;false
-kassaiy;Kassai, Cintari Sellsword;true;false
+kanoy;Kano;true;true
+kassaiy;Kassai, Cintari Sellsword;true;true
 katsuy;Katsu;true;false
 kavdaeny;Kavdaen, Trader of Skins;true;false
 kayoy;Kayo, Berserker Runt;true;false
