@@ -64,6 +64,19 @@ app.get("/sm/heroes/blitz", async (_, res) => {
   }
 })
 
+// Get all Blitz legal heroes
+app.get("/sm/heroes/commoner", async (_, res) => {
+  try {
+    const query = "SELECT hero, name FROM heroes WHERE young ORDER BY hero ASC;";
+    const dbres = await pool.query(query);
+
+    return res.json(dbres.rows);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).end();
+  }
+})
+
 // Get all contestants
 app.get("/sm/contestants", async (_, res) => {
   try {
