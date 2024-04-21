@@ -18,7 +18,7 @@ katsu;Katsu, the Wanderer;false;false
 kayo;Kayo, Armed and Dangerous;false;false
 levia;Levia, Shadowborn Abomination;false;false
 lexi;Lexi, Livewire;false;true
-maxx;Maxx 'The Hype' Nitro;false;false
+maxx;Maxx ''The Hype'' Nitro;false;false
 oldhim;Oldhim, Grandfather of Eternity;false;true
 olympia;Olympia, Prized Fighter;false;false
 prism;Prism, Sculptor of Arc Light;false;true

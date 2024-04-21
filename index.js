@@ -64,7 +64,7 @@ app.get("/sm/heroes/blitz", async (_, res) => {
   }
 })
 
-// Get all Blitz legal heroes
+// Get all Commoner legal heroes
 app.get("/sm/heroes/commoner", async (_, res) => {
   try {
     const query = "SELECT hero, name FROM heroes WHERE young ORDER BY hero ASC;";
