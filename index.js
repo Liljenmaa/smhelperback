@@ -38,6 +38,19 @@ app.get("/sm/heroes", async (_, res) => {
   }
 })
 
+// Get all Living Legend heroes
+app.get("/sm/heroes/ll", async (_, res) => {
+  try {
+    const query = "SELECT hero, name FROM heroes WHERE NOT young ORDER BY hero ASC;";
+    const dbres = await pool.query(query);
+
+    return res.json(dbres.rows);
+  } catch (error) {
+    console.log(error);
+    return res.status(500).end();
+  }
+})
+
 // Get all CC legal heroes
 app.get("/sm/heroes/cc", async (_, res) => {
   try {
