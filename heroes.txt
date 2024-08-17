@@ -10,6 +10,7 @@ dash;Dash, Inventor Extraordinaire;false;false
 dashb;Dash I/O;false;false
 dorinthea;Dorinthea Ironsong;false;false
 dromai;Dromai, Ash Artist;false;true
+enigma;Enigma, Ledger of Ancestry;false;false
 fai;Fai, Rising Rebellion;false;false
 iyslander;Iyslander, Stormbind;false;true
 kano;Kano, Dracai of Aether;false;false
@@ -19,6 +20,7 @@ kayo;Kayo, Armed and Dangerous;false;false
 levia;Levia, Shadowborn Abomination;false;false
 lexi;Lexi, Livewire;false;true
 maxx;Maxx ''The Hype'' Nitro;false;false
+nuu;Nuu, Alluring Desire;false;false
 oldhim;Oldhim, Grandfather of Eternity;false;true
 olympia;Olympia, Prized Fighter;false;false
 prism;Prism, Sculptor of Arc Light;false;true
@@ -30,7 +32,8 @@ uzuri;Uzuri, Switchblade;false;false
 victor;Victor Goldmane, High and Mighty;false;false
 viserai;Viserai, Rune Blood;false;false
 vynnset;Vynnset, Iron Maiden;false;false
-arakniy;Arakni;true;false;
+zen;Zen, Tamer of Purpose;false;false
+arakniy;Arakni;true;false
 arakniby;Arakni, Solitary Confinement;true;false
 azaleay;Azalea;true;false;
 benjiy;Benji, the Piercing Wind;true;false
@@ -47,6 +50,7 @@ dorintheay;Dorinthea;true;false
 dorintheaby;Dorinthea, Quicksilver Prodigy;true;false
 dromaiy;Dromai;true;false
 emperory;Emperor, Dracai of Aesir;true;false
+enigmay;Enigma;true;false
 faiy;Fai;true;false
 genisy;Genis Wotchuneed;true;false
 iray;Ira, Crimson Haze;true;true
@@ -62,6 +66,7 @@ leviay;Levia;true;false
 lexiy;Lexi;true;false
 maxxy;Maxx Nitro;true;false
 melodyy;Melody, Sing-along;true;false
+nuuy;Nuu;true;false
 oldhimy;Oldhim;true;true
 olympiay;Olympia;true;false
 prismy;Prism;true;false
@@ -77,3 +82,4 @@ victory;Victor Goldmane;true;false
 viseraiy;Viserai;true;true
 vynnsety;Vynnset;true;false
 yojiy;Yoji, Royal Protector;true;false
+zeny;Zen;true;false
